@@ -14,7 +14,7 @@ def tsv_to_json(tsv_file, json_file):
 
     # Escreve os dados no arquivo JSON
     with open(json_file, 'w', encoding='utf-8') as jsonf:
-        json.dump(data, jsonf, indent=4)
+        json.dump(data, jsonf, ensure_ascii=False, indent=4)
 
 # Exemplo de uso
 tsv_file = 'dados.tsv'  # Substitua pelo seu arquivo TSV
